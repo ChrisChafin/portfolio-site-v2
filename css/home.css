@@ -1,0 +1,95 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    background-color:#282E34;
+    color: #ddd;
+}
+
+.navbar {
+background-color:#282E34;
+border: none;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: #282E34;
+    color: #FFC0CB;
+}
+
+.myList{ 
+list-style: none;
+text-align: center;
+}
+
+li {
+display: inline;
+}
+
+li a{
+padding: 50px;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("../img/fire.jpg");
+
+    /* Full height */
+    height: 85%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-2 { 
+    /* The image used */
+    background-image: url("../img/concert.jpg");
+
+    /* Full height */
+    height: 85%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-3 { 
+    /* The image used */
+    background-image: url("../img/nym.jpg");
+
+    /* Full height */
+    height: 85%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}        
+
+/* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1024px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+    .parallax-2 {
+        background-attachment: scroll;
+    }
+    .parallax-3 {
+        background-attachment: scroll;
+    }               
+}
+
+.div-1 {
+    height:auto;
+    background-color:#282E34;
+    font-family: monospace;
+    padding: 10px;
+}
+
+.footer {
+padding-top: 10px;
+}
