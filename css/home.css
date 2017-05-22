@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
 body, html {
     height: 100%;
     width: 100%;
+    font-family: 'Merriweather', serif;
     background-color:#282E34;
     color: #ddd;
 }
@@ -10,22 +13,36 @@ background-color:#282E34;
 border: none;
 }
 
+.navbar-collapse > ul {
+    margin-left: 100px;
+}
+
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
     background-color: #282E34;
     color: #FFC0CB;
 }
 
-.myList{ 
+.navbar-default .navbar-nav > li > a:active {
+    background-color: #282E34;
+    color: #FFC0CB;
+}
+
+.linksList{ 
 list-style: none;
 text-align: center;
 }
 
-li {
+.linksList > li {
 display: inline;
 }
 
-li a{
+.linksList> li a{
 padding: 50px;
+}
+
+.resumeList, 
+.resumeList > ul {
+    list-style: none;
 }
 
 .parallax { 
@@ -58,6 +75,20 @@ padding: 50px;
 
 .parallax-3 { 
     /* The image used */
+    background-image: url("../img/mountains.jpg");
+
+    /* Full height */
+    height: 85%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-4 { 
+    /* The image used */
     background-image: url("../img/nym.jpg");
 
     /* Full height */
@@ -68,7 +99,18 @@ padding: 50px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}        
+}
+
+.overlay {
+    position: absolute;
+    top: 250;
+    left: 0;
+    right: 0;
+    margin: auto; 
+    background: transparent;
+    text-shadow: 2px 1px #000000;
+}
+         
 
 /* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
 @media only screen and (max-device-width: 1024px) {
@@ -80,6 +122,9 @@ padding: 50px;
     }
     .parallax-3 {
         background-attachment: scroll;
+    }
+    .parallax-4 {
+        background-attachment: scroll;
     }               
 }
 
@@ -87,7 +132,7 @@ padding: 50px;
     height:auto;
     background-color:#282E34;
     font-family: monospace;
-    padding: 10px;
+    padding: 30px;
 }
 
 .footer {
