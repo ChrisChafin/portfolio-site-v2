@@ -18,7 +18,7 @@
 
 </head>
 <body>
-  <nav class="navbar navbar-default navbar-fixed-top">
+  <nav class="navbar navbar-default navbar-fixed-top" id="banner">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -31,7 +31,7 @@
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav" style="padding-left:10vw">
-        <li><a href="#">Home</a></li>
+        <li><a href="#home">Home</a></li>
         <li><a href="#about">About Me</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#resume">Resume</a></li>
@@ -41,7 +41,7 @@
   </div>
 </nav>
 
-    <div class="parallax"></div>
+    <div class="parallax" id="home"></div>
     
     <div class="div-1 text-center" id="about">
         <h1>About Me</h1>
@@ -125,7 +125,7 @@
       <br />
       <h4>
         <ul class="linksList">
-        <li><a "mailto:chris182@verizon.net"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i> Email me</a></li>
+        <li><a href="mailto:chris182@verizon.net"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i> Email me</a></li>
         <li><a href="https://www.linkedin.com/in/christopher-chafin/" target='_blank'><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i> LinkedIN</a></li>
         <!--Not verified on Dribble so I cannot put any work up there yet-->
         <!--<li><a href="https://dribbble.com/ChrisChafin" target='_blank'><i class="fa fa-dribbble fa-2x" aria-hidden="true"></i> Dribble</a></li>-->
@@ -138,6 +138,7 @@
   
   <footer>
     <p class="text-center">Chris Chafin © 2017 All Rights Reserved</p>
+    <p class="text-center">chris182@verizon.net</p>
   </footer>
 
 
@@ -150,6 +151,10 @@
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <script src="js/vendor/holder.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="js/ie10-viewport-bug-workaround.js"></script>  
+    <script src="js/ie10-viewport-bug-workaround.js"></script> 
+    <!--j-Query Easing plug-in-->
+    <script src="js/jQuery-easing.js"></script>
+    <!--base js-->
+    <script src="js/base.js"></script>  
 </body>
 </html>
